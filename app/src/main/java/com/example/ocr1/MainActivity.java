@@ -44,8 +44,25 @@ public class MainActivity extends AppCompatActivity {
         dialog.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                if(which==0){
+                    if(!checkCamerPermission()){
+                        requestCameraPermission();
+                    }
+                    else
+                        pickCamera();
+                }
+                if(which==1){
+                    //gallery
+                    if(!checkStoragePermission()){
+                        //StorageNot allowed
+                        requestStoragePermission();
+                    }
+                    else {
+                        pickGallery();
+                    }
 
+                }
             }
-        })
+        });
     }
 }
