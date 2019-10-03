@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     String storagePermission[];
 
     Uri image_uri;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
