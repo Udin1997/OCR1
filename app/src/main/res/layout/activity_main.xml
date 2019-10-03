@@ -35,7 +35,7 @@
                        android:layout_height="wrap_content"></TextView>
                     <EditText
                         android:id="@+id/resultEt"
-                        android:hint="Click + button"
+                        android:hint=""
                         android:autoLink="all"
                         android:background="@null"
                         android:padding="5dp"
